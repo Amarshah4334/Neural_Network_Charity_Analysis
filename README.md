@@ -90,4 +90,4 @@ Optimize your model in order to achieve a target predictive accuracy higher than
 
 
 ## Summary
-The tensorflow and keras were not loading all thru this module and hence i have not been able to summarize my results. will seek help from class next week and update.
+The tensorflow and keras were not loading all thru this module and hence i have not been able to summarize my results. will seek help from class next week and update.i have tried seeking bcs help to no avail
