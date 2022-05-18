@@ -90,4 +90,33 @@ Optimize your model in order to achieve a target predictive accuracy higher than
 
 
 ## Summary
-The tensorflow and keras were not loading all thru this module and hence i have not been able to summarize my results. will seek help from class next week and update.i have tried seeking bcs help to no avail
+In this analysis the data preprocessing target is included in the IS_SUCCESSFUL column
+However we dropped the following cloumnsin the represented model:
+ORGANIZATION,STATUS,INCOME_AMT,SPECIAL_CONSIDERATIONS,ASK_AMT,APPLICATION_TYPE,AFFILIATION,CLASSIFICATION,USE_CASE.
+We also needed to remove EIN and NAME.
+
+### Define the model - deep neural net, i.e., the number of input features and hidden nodes for each layer.
+
+nodes_hidden_layer1 = 100
+nodes_hidden_layer2 = 30
+
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense (Dense)                (None, 100)               5000      
+_________________________________________________________________
+dense_1 (Dense)              (None, 30)                3030      
+_________________________________________________________________
+dense_2 (Dense)              (None, 1)                 31        
+=================================================================
+Total params: 8,061
+Trainable params: 8,061
+Non-trainable params: 0
+
+The accuracy was 0.7310 and we made many attempts to improve it by:-
+Dereasing the number of hidden nodes in layer 1 
+Increasing the number of hidden layers upto 3
+We also changed the activation functions
+SUMMARY
+the data preprocessing analysis shows a recommendation as to how various models can solve the final outcome.
